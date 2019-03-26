@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Roommates App</title>
+<meta charset="utf-8" />
+<meta name="description" content="Find a roommate!">
+<meta name="keywords" content="roommates, moving, relocation, accomodation">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<style type="text/css">
+	body{
+		color: #fff;
+		background: #3598dc;
+		font-family: 'Roboto', sans-serif;
+	}
+    .form-control{
+		height: 41px;
+		background: #f2f2f2;
+		box-shadow: none !important;
+		border: none;
+	}
+	
+    
+	.signup-form{
+		max-width: 400px;
+		margin: 30px auto;
+	}
+	.signup-form form{
+		color: #999;
+		border-radius: 3px;
+    	margin-bottom: 15px;
+        background: #fff;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+	
+       
+	.signup-form .form-group{
+		margin-bottom: 20px;
+	}
+    .signup-form .btn{        
+        font-size: 16px;
+        font-weight: bold;
+		background: #3598dc;
+		border: none;
+		min-width: 140px;
+    }
+	.signup-form .btn:hover, .signup-form .btn:focus{
+		background: #2389cd !important;
+        outline: none;
+	}
+    .signup-form a{
+		color: #fff;
+		text-decoration: underline;
+	}
+	.signup-form a:hover{
+		text-decoration: none;
+	}
+	.signup-form form a{
+		color: #3598dc;
+		text-decoration: none;
+	}	
+	.signup-form form a:hover{
+		text-decoration: underline;
+	}
+    
+</style>
+
+</head>
+
+<body>
+  <!--  -->
+
+  <section id="accountsignup">
+    <div class="signup-form">
+   
+    <h2>Sign up</h2>
+    <p>Please enter your information below to create your account</p>
+   
+  	<form action="process-signup.php" method="post">
+          
+        
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="tel" class="form-control" name="phone" placeholder="Phone number" required="required">
+        </div>
+        <div class="form-group">
+        	<input type="text" class="form-control" name="city" placeholder="Your city" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
+		<div class="form-group">
+            <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+        </div> 
+    
+
+    <!-- haven't tested radio buttons yet - Elena -->
+    <!--
+      <input type="radio" class="radio" name="signupGender" value="male" id="signupGenderMale" />
+      <label for="male">Male</label>
+      <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
+      <label for="female">Female</label> -->
+
+      <br>
+      <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+    </div>
+      </form>
+    </div>
+      <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+  </section>
+
+</body>
+</html>

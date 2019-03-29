@@ -11,102 +11,30 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<style type="text/css">
-	body{
-		color: #fff;
-		background: #3598dc;
-		font-family: 'Roboto', sans-serif;
-	}
-    .form-control{
-		height: 41px;
-		background: #f2f2f2;
-		box-shadow: none !important;
-		border: none;
-	}
-	
-    
-	.signup-form{
-		max-width: 400px;
-		margin: 30px auto;
-	}
-	.signup-form form{
-		color: #999;
-		border-radius: 3px;
-    	margin-bottom: 15px;
-        background: #fff;
-        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-        padding: 30px;
-    }
-	
-       
-	.signup-form .form-group{
-		margin-bottom: 20px;
-	}
-    .signup-form .btn{        
-        font-size: 16px;
-        font-weight: bold;
-		background: #3598dc;
-		border: none;
-		min-width: 140px;
-    }
-	.signup-form .btn:hover, .signup-form .btn:focus{
-		background: #2389cd !important;
-        outline: none;
-	}
-    .signup-form a{
-		color: #fff;
-		text-decoration: underline;
-	}
-	.signup-form a:hover{
-		text-decoration: none;
-	}
-	.signup-form form a{
-		color: #3598dc;
-		text-decoration: none;
-	}	
-	.signup-form form a:hover{
-		text-decoration: underline;
-	}
-    
-</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 
 </head>
 
 <body>
-  <!--  -->
+
 
   <section id="accountsignup">
     <div class="signup-form">
-   
+
     <h2>Login</h2>
     <p>Please enter your email/ phone Number and password to login</p>
-   
+
   	<form action="process-signup.php" method="post">
-          
-        
+
+
         <div class="form-group">
         	<input type="email" class="form-control" name="email" placeholder="Email/ phone Number" required="required">
         </div>
-        <!-- <div class="form-group">
-        	<input type="tel" class="form-control" name="phone" placeholder="Phone number" required="required">
-        </div>
-        <div class="form-group">
-        	<input type="text" class="form-control" name="city" placeholder="Your city" required="required">
-        </div>
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div> -->
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div> 
-    
 
-    <!-- haven't tested radio buttons yet - Elena -->
-    <!--
-      <input type="radio" class="radio" name="signupGender" value="male" id="signupGenderMale" />
-      <label for="male">Male</label>
-      <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
-      <label for="female">Female</label> -->
+		<div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+        </div>
 
       <br>
       <div class="form-group">
@@ -114,7 +42,7 @@
     </div>
       </form>
     </div>
-      <div class="text-center">Don't have an account? <a href="signup_bootstrap.html">Sign up now</a></div>
+      <div class="text-center">Don't have an account? <a href="signup.html">Sign up now</a></div>
   </section>
 
 </body>

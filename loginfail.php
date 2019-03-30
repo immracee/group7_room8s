@@ -22,27 +22,13 @@
   <section id="accountsignup">
     <div class="signup-form">
 
-    <h2>Login</h2>
-    <p>Please enter your email/ phone Number and password to login</p>
-
-  	<form action="process-login.php" method="post">
-
-
-        <div class="form-group">
-        	<input type="email" class="form-control" name="email" placeholder="Email/ phone Number" required="required">
-        </div>
-
-		<div class="form-group">
-            <input type="password" class="form-control" name="password" placeholder="Password" required="required">
-        </div>
-
-      <br>
-      <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">Login now</button>
-    </div>
+      <h2>Login failed</h2>
+      <p>Incorrect credentials.</p>
       </form>
-    </div>
-      <div class="text-center">Don't have an account? <a href="signup.html">Sign up now</a></div>
+
+      <a href="login.php">Back</a>
+
+
   </section>
 
 </body>

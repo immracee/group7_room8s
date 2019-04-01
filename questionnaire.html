@@ -10,7 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 
@@ -21,11 +21,11 @@
 
   <section id="accountsignup">
     <div class="signup-form">
-   
+
     <h2>Questionair</h2>
-  
-   
-  	<form action="question.php" method="post">
+
+
+  	<form action="process-question.php" method="post">
         <div id="question1">
         <p>Are you an early bird or a night owl?</p>
         <div class="form-check form-check-inline">
@@ -61,9 +61,9 @@
             <label class="form-check-label" for="inlineRadio2">answer1</label>
           </div>
         </div>
-        
-        
-    
+
+
+
         <ul class="pager" id="pager">
             <li class="previous" id="pre">
               <a href="#">&larr; previous</a>
@@ -71,11 +71,11 @@
             <li class="next" id="next">
               <a href="#">next &rarr;</a>
             </li>
-          </ul>   
+          </ul>
 
         <div class="form-group" id="submit" >
                 <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
-        </div>  
+        </div>
     <!-- haven't tested radio buttons yet - Elena -->
     <!--
       <input type="radio" class="radio" name="signupGender" value="male" id="signupGenderMale" />
@@ -83,13 +83,13 @@
       <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
       <label for="female">Female</label> -->
     </form>
-    
+
     </div>
-      
-       
-       
+
+
+
     </div>
-    
+
   </section>
 
 </body>
@@ -101,11 +101,11 @@
 
 $(document).ready(function(){
     var i = 0;
-    
+
   $("#next").click(function(){
       i++;
       console.log(i);
-     
+
       if(i == 1){
     $("#question1").hide();
     $("#question2").show();
@@ -147,7 +147,7 @@ $(document).ready(function(){
 }
   });
 
-  
+
 });
 </script>
 </html>

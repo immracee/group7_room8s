@@ -40,7 +40,7 @@ if($_SESSION['logged-in'] == false) {
     <h2>Questionair</h2>
 
 
-  	<form action="question.php" method="post">
+  	<form action="process-question.php" method="post">
         <div id="question1">
         <p>Are you an early bird or a night owl?</p>
         <div class="form-check form-check-inline">

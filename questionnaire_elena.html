@@ -37,10 +37,13 @@ if($_SESSION['logged-in'] == false) {
   <section id="accountsignup">
     <div class="signup-form">
 
-    <h2>Questionair</h2>
+    <h1 class="text-center">Roommates!</h1>
+
+
 
 
   	<form action="question.php" method="post">
+      <h2>Questionair</h2>
         <div id="question1">
         <p>Are you an early bird or a night owl?</p>
         <div class="form-check form-check-inline">
@@ -51,7 +54,9 @@ if($_SESSION['logged-in'] == false) {
             <input class="form-check-input" type="radio" name="question1" id="inlineRadio2" value="owl">
             <label class="form-check-label" for="inlineRadio2">Owl</label>
           </div>
+          <br>
         </div>
+
 
         <div id="question2">
                 <p>Your gender</p>
@@ -89,7 +94,7 @@ if($_SESSION['logged-in'] == false) {
           </ul>
         <input type="hidden" name="email" value="<?php echo($row["email"]); ?>">
         <div class="form-group" id="submit" >
-                <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-lg">Submit and show matches</button>
         </div>
     <!-- haven't tested radio buttons yet - Elena -->
     <!--
@@ -97,13 +102,16 @@ if($_SESSION['logged-in'] == false) {
       <label for="male">Male</label>
       <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
       <label for="female">Female</label> -->
+
+
     </form>
+    <!-- <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php">Back to your profile</a></button> -->
+    <a href="profile_yourprofile.php">Back to your profile</a>
+
+
 
     </div>
 
-
-
-    </div>
 
   </section>
 

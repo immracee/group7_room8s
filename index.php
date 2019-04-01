@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Login</title>
+<title>Roommates App - Main Page</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -18,8 +18,8 @@
 
 <body>
 
-
   <section id="login">
+
     <div class="signup-form">
 
     <h1 class="text-center">Roommates!</h1>
@@ -27,26 +27,16 @@
   	<form action="process-login.php" method="post">
 
 
-      <h2>Login</h2>
-
-        <p>Please enter your email and password to login</p>
-
-
         <div class="form-group">
-        	<input type="email" id="loginUsername" class="form-control" name="loginUsername" placeholder="Email" required="required">
+
+          <p>Get matched with the right roommate for you with our matching system! Get started by creating an account.</p>
         </div>
 
-		<div class="form-group">
-            <input type="password" id="loginPassword" class="form-control" name="loginPassword" placeholder="Password" required="required">
-        </div>
-
-      <br>
       <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg">Login now</button>
-            <div class="text-center">Don't have an account? <a href="signup.php">Sign up now</a></div>
+            <button type="submit" class="btn btn-primary btn-lg"><a href="signup.php" style="color: white;">Create account</a></button>
     </div>
+    <div class="text-center">Already have an account? <a href="login.php">Log in</a></div>
       </form>
-
     </div>
 
   </section>

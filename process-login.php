@@ -12,7 +12,7 @@ $stmt->execute();
 if($row = $stmt->fetch()){
 	$_SESSION['logged-in'] = true;
 	$_SESSION['email'] = $row['email'];
-	header("Location: loggedin.php");
+	header("Location: profile_yourprofile.php");
 }else{
 	header("Location: loginfail.php");
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App</title>
+<title>Roommates App - Sign Up</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -18,17 +18,18 @@
 
 <body>
   <header>
-      <h1 class="text-center">Roommates App</h1>
+      <h1 class="text-center">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
 
 
-  	<h2>Sign up</h2>
-    <p>Please enter your information below to create your account</p>
-
   	<form action="process-signup.php" method="post">
   		<div class="form-group">
+
+        <h2>Sign up</h2>
+        <p>Please enter your information below to create your account</p>
+
   			<label for="signupFirstName">First name: </label>
   			<input type="text" class="form-control" id="signupFirstName" name="signupFirstName" placeholder="Enter first name" />
   		</div>
@@ -36,21 +37,25 @@
   			<label for="signupLastName">Last Name: </label>
   			<input type="text" class="form-control" id="signupLastName" name="signupLastName" placeholder="Enter last name" />
   		</div>
+      <div>
+  			<label for="signupEmail">Email: </label>
+  			<input type="email" class="form-control" id="signupEmail" name="signupEmail" placeholder="youremail@email.com" required />
+  		</div>
   		<div>
   			<label for="signupPhonenumber">Phone number: </label>
   			<input type="text" class="form-control" id="signupPhonenumber" name="signupPhonenumber" placeholder="905-123-4567" required />
   		</div>
-  		<div>
-  			<label for="signupEmail">Email: </label>
-  			<input type="email" class="form-control" id="signupEmail" name="signupEmail" placeholder="youremail@email.com" required />
-  		</div>
       <div>
-        <label for="signupCity">Current city: </label>
+        <label for="signupCity">City: </label>
         <input type="text" class="form-control" id="signupCity" name="signupCity" placeholder="Enter city" />
       </div>
       <div>
         <label for="signupPassword">Password: </label>
         <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Enter password" />
+      </div>
+      <div>
+        <label for="signupPassword">Confirm Password: </label>
+        <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Confirm password" />
       </div>
 
     <!-- haven't tested radio buttons yet - Elena -->
@@ -63,9 +68,10 @@
       <br>
       <div class="form-group">
   		<button class="btn btn-primary btn-lg">Register</button>
+      <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
     </div>
   	</form>
-    <div class="text-center">Already have an account? <a href="#">Login here</a></div>
+
   </section>
 
 </body>

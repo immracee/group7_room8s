@@ -19,5 +19,5 @@ $stmt = $pdo->prepare("INSERT INTO `signupRoommate` (`firstName`, `lastName`, `p
 
 $stmt->execute();
 
-header("Location: registrationreceived.php");
+header("Location: profile_yourprofile.php");
 ?>

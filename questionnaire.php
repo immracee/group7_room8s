@@ -4,14 +4,13 @@ session_start();
 if($_SESSION['logged-in'] == false) {
     header("Location: login.php");
 }else{
-  ?>
-  <?php
+
   require_once('database.php');
   $stmt = $pdo->prepare("SELECT * FROM `signupRoommate`");
   $stmt->execute();
   $row = $stmt->fetch();
+}
   ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,10 +36,14 @@ if($_SESSION['logged-in'] == false) {
   <section id="accountsignup">
     <div class="signup-form">
 
-    <h2>Questionair</h2>
+    <h1 class="text-center">Roommates!</h1>
+
+
+
 
 
   	<form action="process-question.php" method="post">
+      <h2>Questionaire</h2>
         <div id="question1">
         <p>Are you an early bird or a night owl?</p>
         <div class="form-check form-check-inline">
@@ -98,6 +101,7 @@ if($_SESSION['logged-in'] == false) {
       <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
       <label for="female">Female</label> -->
     </form>
+      <a href="profile_yourprofile.php">Back to your profile</a>
 
     </div>
 

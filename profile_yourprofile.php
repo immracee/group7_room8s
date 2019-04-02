@@ -1,14 +1,27 @@
 <?php
 session_start();
+// $_SESSION['firstName'] = $firstName;
 
 if (isset($_SESSION['email']))
 {
-     echo 'logged in';
+     // echo 'logged in';
+     echo($_SESSION['email']);
+     // $displayFirstName =
 }
 else
 {
      header("Location: loginfail.php");
 }
+
+
+require_once 'database.php';
+
+$email = $_SESSION['email'];
+$stmt = $pdo->prepare("SELECT * FROM `signuproommate` WHERE `email` = '$email'");
+
+$stmt->execute();
+$row = $stmt->fetch();
+
 ?>
 
 <!DOCTYPE html>
@@ -46,23 +59,39 @@ else
 
         <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
   			<label for="signupFirstName">First name: </label>
-        <p>Bob</p>
+        <!-- <p>Bob</p> -->
+
+        <!-- //show records (process results) -->
+        <div>
+          <?php echo($row["firstName"]);?>
+          </div>
+
+
+
   		</div>
   		<div>
   			<label for="signupLastName">Last Name: </label>
-  			<p>Stuart</p>
+      <div>
+          <?php echo($row["lastName"]);?>
+      </div>
   		</div>
       <div>
   			<label for="signupEmail">Email: </label>
-  			<p>bobstuart@bobstuart.com</p>
+        <div>
+  			<?php echo($row["email"]);?>
+      </div>
   		</div>
   		<div>
   			<label for="signupPhonenumber">Phone number: </label>
-  			<p>289-765-4321</p>
+        <div>
+        <?php echo($row["phone"]);?>
+      </div>
   		</div>
       <div>
         <label for="signupCity">City: </label>
-        <p>Oakville</p>
+        <div>
+        <?php echo($row["city"]);?>
+      </div>
       </div>
 
 

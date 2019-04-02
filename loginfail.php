@@ -19,15 +19,21 @@
 <body>
 
 
-  <section id="accountsignup">
+  <section id="login">
     <div class="signup-form">
+    <h1 class="text-center">Roommates!</h1>
+    <form action="process-login.php" method="post">
 
-      <h2>Login failed</h2>
-      <p>Incorrect credentials.</p>
+        <div class="form-group">
+
+          <h2>Access Denied</h2>
+          <p>Please enter correct login details to proceed.</p>
+
+          <a href="login.php">Back to login</a>
+        </div>
+
       </form>
-
-      <a href="login.php">Back</a>
-
+    </div>
 
   </section>
 

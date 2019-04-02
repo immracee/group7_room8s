@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+if (isset($_SESSION['email']))
+{
+     echo 'logged in';
+}
+else
+{
+     header("Location: loginfail.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

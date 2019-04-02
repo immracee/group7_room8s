@@ -75,7 +75,7 @@ else
   		<button class="btn btn-primary btn-lg">Change Password</button>
       <br>
       <br>
-      <button class="btn btn-primary btn-lg"><a href="questionnaire_elena.html" style="color: white;">Complete Questionaire</a></button>
+      <button class="btn btn-primary btn-lg"><a href="questionnaire.php" style="color: white;">Complete Questionaire</a></button>
       <br>
       <br>
       <button class="btn btn-primary btn-lg"><a href="viewmatches.php" style="color: white;">View Matches</a></button>

@@ -6,9 +6,10 @@ if($_SESSION['logged-in'] == false) {
 }else{
 
   require_once('database.php');
-  $stmt = $pdo->prepare("SELECT * FROM `signupRoommate`");
+  $stmt = $pdo->prepare("SELECT * FROM `signupRoommate` ");
   $stmt->execute();
   $row = $stmt->fetch();
+  echo($_SESSION['email']);
 }
   ?>
 
@@ -71,11 +72,11 @@ if($_SESSION['logged-in'] == false) {
         <div id="question3">
         <p>The third question</p>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="bird">
+            <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="answer1">
             <label class="form-check-label" for="inlineRadio1">answer1</label>
           </div>
           <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="owl">
+            <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="answer1">
             <label class="form-check-label" for="inlineRadio2">answer1</label>
           </div>
         </div>
@@ -90,9 +91,9 @@ if($_SESSION['logged-in'] == false) {
               <a href="#">next &rarr;</a>
             </li>
           </ul>
-        <input type="hidden" name="email" value="<?php echo($row["email"]); ?>">
+        <input type="hidden" name="email" value="<?php echo($_SESSION['email']); ?>">
         <div class="form-group" id="submit" >
-                <button type="submit" class="btn btn-primary btn-lg">Sign Up</button>
+                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
         </div>
     <!-- haven't tested radio buttons yet - Elena -->
     <!--

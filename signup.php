@@ -53,10 +53,10 @@
         <label for="signupPassword">Password: </label>
         <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Enter password" />
       </div>
-      <div>
+      <!-- <div>
         <label for="signupPassword">Confirm Password: </label>
         <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Confirm password" />
-      </div>
+      </div> -->
 
     <!-- haven't tested radio buttons yet - Elena -->
     <!--

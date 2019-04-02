@@ -16,5 +16,5 @@ $stmt = $pdo->prepare("UPDATE `signupRoommate` SET `question1` = '$question1', `
 
 $stmt->execute();
 
-// header("Location: registrationreceived.php");
+header("Location: viewmatches.php");
 ?>

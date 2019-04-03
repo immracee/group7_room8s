@@ -1,5 +1,11 @@
 <?php
 session_start();
+require_once('database.php');
+
+$question1 = $_GET['question1'];
+
+$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1'");
+$stmt->execute();
 
 if (isset($_SESSION['email']))
 {
@@ -42,21 +48,27 @@ else
 
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
+        <p><?php echo($question1); ?><p>
 
-        <button class="btn btn-primary btn-lg">Change City</button>
+          <?php
+          while($row = $stmt->fetch()) {
+                                        ?>
+          <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+          <?php
+           }
+           ?>
 
-        <button class="btn btn-primary btn-lg"><a href="questionnaire_elena.html" style="color: white;">Modify Questionnaire</a></button>
+        <!-- <button class="btn btn-primary btn-lg">Change City</button>
+
+        <button class="btn btn-primary btn-lg"><a href="questionnaire_elena.html" style="color: white;">Modify Questionnaire</a></button> -->
 
 
         <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
-        <div>
+        <!-- <div>
           <label for="signupCity">Name</label>
         </div>
         <button class="btn btn-primary btn-lg"><a href="profile_match.php" style="color: white;">View Profile</a></button>
-  		</div>
-
-
-
+  		</div> -->
 
       <br>
       <div class="form-group">
@@ -67,7 +79,6 @@ else
       <br>
     </div>
   	</form>
-
   </section>
 
 </body>

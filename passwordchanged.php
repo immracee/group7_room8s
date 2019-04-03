@@ -13,21 +13,12 @@ else
      header("Location: loginfail.php");
 }
 
-
-require_once 'database.php';
-
-$email = $_SESSION['email'];
-$stmt = $pdo->prepare("SELECT * FROM `signuproommate` WHERE `email` = '$email'");
-
-$stmt->execute();
-$row = $stmt->fetch();
-
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Profile</title>
+<title>Roommates App - Change Password</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -50,72 +41,21 @@ $row = $stmt->fetch();
   <section class="signup-form" id="accountsignup">
 
 
-  	<form action="process-signup.php" method="post">
+  	<form action="process-changepassword.php" method="post">
   		<div class="form-group">
 
-        <h2>Your Profile</h2>
-        <p>Your profile details below</p>
+        <h2>Password changed</h2>
+        <p>Your password has been successfully changed!</p>
 
-
-        <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
-  			<label for="signupFirstName">First name: </label>
-        <!-- <p>Bob</p> -->
-
-        <!-- //show records (process results) -->
-        <div>
-          <?php echo($row["firstName"]);?>
-          </div>
-
-
-
-  		</div>
-  		<div>
-  			<label for="signupLastName">Last Name: </label>
-      <div>
-          <?php echo($row["lastName"]);?>
-      </div>
-  		</div>
-      <div>
-  			<label for="signupEmail">Email: </label>
-        <div>
-  			<?php echo($row["email"]);?>
-      </div>
-  		</div>
-  		<div>
-  			<label for="signupPhonenumber">Phone number: </label>
-        <div>
-        <?php echo($row["phone"]);?>
-      </div>
-  		</div>
-      <div>
-        <label for="signupCity">City: </label>
-        <div>
-        <?php echo($row["city"]);?>
-      </div>
-      </div>
-
-
-      <br>
       <div class="form-group">
-  		<button class="btn btn-primary btn-lg">Edit Account Details</button>
       <br>
       <br>
-      <div class="form-group">
-  		<button class="btn btn-primary btn-lg"><a href="changepassword.php" style="color: white;">Change Password</a></button>
-      <br>
-      <br>
-      <button class="btn btn-primary btn-lg"><a href="questionnaire.php" style="color: white;">Complete Questionaire</a></button>
-      <br>
-      <br>
-      <button class="btn btn-primary btn-lg"><a href="viewmatches.php" style="color: white;">View Matches</a></button>
+      <a href="profile_yourprofile.php"><button class="btn btn-primary btn-lg" style="color: white;">Back</button></a>
       <br>
       <br>
 
-      <br>
-      <br>
     </div>
   	</form>
-
     <form action="process-logout.php" method="post">
       <button>Logout</button>
     </form>

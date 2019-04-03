@@ -20,36 +20,36 @@ $stmt = $pdo->prepare("INSERT INTO `signupRoommate` (`firstName`, `lastName`, `p
 $stmt->execute();
 
 
+//
+//
+// session_start();
+// // require_once('database.php');
+// $email = $_POST['loginUsername'];
+// $password = $_POST['loginPassword'];
+//
+//
+// $stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE `email` = '$email' AND `password` = '$password'");
+//
+// $stmt->execute();
+//
+// if($row = $stmt->fetch()){
+// 	$_SESSION['logged-in'] = true;
+// 	$_SESSION['email'] = $row['email'];
+// 	header("Location: profile_yourprofile.php");
+// }else{
+// 	header("Location: loginfail.php");
+// }
+//
+//
+// if (isset($_SESSION['email']))
+// {
+//      // echo 'logged in';
+//      echo($_SESSION['email']);
+//      // $displayFirstName =
+//
+// }
 
 
-session_start();
-// require_once('database.php');
-$email = $_POST['loginUsername'];
-$password = $_POST['loginPassword'];
 
-
-$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE `email` = '$email' AND `password` = '$password'");
-
-$stmt->execute();
-
-if($row = $stmt->fetch()){
-	$_SESSION['logged-in'] = true;
-	$_SESSION['email'] = $row['email'];
-	header("Location: profile_yourprofile.php");
-}else{
-	header("Location: loginfail.php");
-}
-
-
-if (isset($_SESSION['email']))
-{
-     // echo 'logged in';
-     echo($_SESSION['email']);
-     // $displayFirstName =
-
-}
-
-
-
-// header("Location: registrationreceived.php");
+header("Location: profile_yourprofile.php");
 ?>

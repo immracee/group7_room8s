@@ -3,8 +3,9 @@ session_start();
 require_once('database.php');
 
 $question1 = $_GET['question1'];
+$question2 = $_GET['question2'];
 
-$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1'");
+$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1' AND question2 = '$question2'");
 $stmt->execute();
 
 if (isset($_SESSION['email']))
@@ -49,6 +50,7 @@ else
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
         <p><?php echo($question1); ?><p>
+          <p><?php echo($question2); ?><p>
 
           <?php
           while($row = $stmt->fetch()) {

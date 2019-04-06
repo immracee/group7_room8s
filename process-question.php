@@ -22,7 +22,7 @@ $stmt = $pdo->prepare("UPDATE `signupRoommate` SET `question1` = '$question1' , 
 // $_SESSION['question2'] = $question2;
 // $_SESSION['question3'] = $question3;
 
-echo($question1);
+// echo($question1);
 // echo($_SESSION['question1']);
 $stmt->execute();
 
@@ -68,8 +68,10 @@ $stmt->execute();
         <h2>Confirm your choices</h2>
         <p>Please confirm your choices</p>
         <p><?php echo($question1); ?><p>
+          <p><?php echo($question2); ?><p>
 
-        <a href="viewmatches.php?question1=<?php echo($question1); ?>">Show result</a>
+        <a href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>">Show result</a>
+
 
     </section>
 

@@ -5,7 +5,7 @@ require_once('database.php');
 $question1 = $_GET['question1'];
 $question2 = $_GET['question2'];
 
-$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1' AND question2 = '$question2'");
+$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1' OR question2 = '$question2'");
 $stmt->execute();
 
 if (isset($_SESSION['email']))

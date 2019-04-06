@@ -69,8 +69,9 @@ $stmt->execute();
         <p>Please confirm your choices</p>
         <p><?php echo($question1); ?><p>
           <p><?php echo($question2); ?><p>
+            <p><?php echo($question3); ?><p>
 
-        <a href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>">Show result</a>
+        <a href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
 
 
     </section>

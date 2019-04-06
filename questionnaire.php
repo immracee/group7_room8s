@@ -70,14 +70,14 @@ if($_SESSION['logged-in'] == false) {
                 </div>
 
         <div id="question3">
-        <p>The third question</p>
+        <p>Smoker?</p>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="question3" id="inlineRadio1" value="answer1">
-            <label class="form-check-label" for="inlineRadio1">answer1</label>
+            <label class="form-check-label" for="inlineRadio1">Smoker</label>
           </div>
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="question3" id="inlineRadio2" value="answer1">
-            <label class="form-check-label" for="inlineRadio2">answer1</label>
+            <label class="form-check-label" for="inlineRadio2">Non-Smoker</label>
           </div>
         </div>
 

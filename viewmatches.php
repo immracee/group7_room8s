@@ -54,10 +54,16 @@ else
 
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
-        <p><?php echo($question1); ?><p>
-          <p><?php echo($question2); ?><p>
-            <p><?php echo($question3); ?><p>
+        <input type="checkbox" name="question1" value="q1" checked> <?php echo($question1); ?><br>
+        <input type="checkbox" name="question2" value="q1" checked> <?php echo($question2); ?><br>
+        <input type="checkbox" name="question3" value="q1" checked> <?php echo($question3); ?><br>
 
+       
+       
+       <!-- <p><?php echo($question1); ?><p>
+          <p><?php echo($question2); ?><p>
+            <p><?php echo($question3); ?><p> -->
+            <div id = "q1">
               <?php
               while($row = $stmt->fetch()) {
                                             ?>
@@ -65,6 +71,7 @@ else
               <?php
                }
                ?>
+               </div>
 
 
 

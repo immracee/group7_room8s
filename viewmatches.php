@@ -6,8 +6,12 @@ $question1 = $_GET['question1'];
 $question2 = $_GET['question2'];
 $question3 = $_GET['question3'];
 
+$responses = array($question1, $question2, $question3);
+
 $stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1' OR question2 = '$question2' OR question3 = '$question3'");
 $stmt->execute();
+
+$row = $stmt->fetch();
 
 if (isset($_SESSION['email']))
 {
@@ -54,25 +58,15 @@ else
           <p><?php echo($question2); ?><p>
             <p><?php echo($question3); ?><p>
 
-          <?php
-          while($row = $stmt->fetch()) {
-                                        ?>
-          <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
-          <?php
-           }
-           ?>
-
-        <!-- <button class="btn btn-primary btn-lg">Change City</button>
-
-        <button class="btn btn-primary btn-lg"><a href="questionnaire_elena.html" style="color: white;">Modify Questionnaire</a></button> -->
+              <?php
+              while($row = $stmt->fetch()) {
+                                            ?>
+              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              <?php
+               }
+               ?>
 
 
-        <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
-        <!-- <div>
-          <label for="signupCity">Name</label>
-        </div>
-        <button class="btn btn-primary btn-lg"><a href="profile_match.php" style="color: white;">View Profile</a></button>
-  		</div> -->
 
       <br>
       <div class="form-group">

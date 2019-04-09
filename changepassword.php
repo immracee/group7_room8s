@@ -35,7 +35,7 @@ else
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">

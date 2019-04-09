@@ -11,7 +11,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
 
 </head>
@@ -22,7 +25,7 @@
   <section id="login">
     <div class="signup-form">
 
-    <h1 class="text-center">Roommates!</h1>
+    <h1 class="text-center font-maintitle">Roommates!</h1>
 
   	<form action="process-login.php" method="post">
 

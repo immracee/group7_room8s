@@ -26,7 +26,10 @@ if($_SESSION['logged-in'] == false) {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
 
 </head>
@@ -34,10 +37,10 @@ if($_SESSION['logged-in'] == false) {
 <body>
   <!--  -->
 
-  <section id="accountsignup">
-    <div class="signup-form">
+  <section id="accountsignup" class="signup-form">
+    <div>
 
-    <h1 class="text-center">Roommates!</h1>
+    <h1 class="text-center font-maintitle">Roommates!</h1>
 
 
 
@@ -101,14 +104,15 @@ if($_SESSION['logged-in'] == false) {
       <label for="male">Male</label>
       <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
       <label for="female">Female</label> -->
+        <a href="profile_yourprofile.php">Back to your profile</a>
     </form>
-      <a href="profile_yourprofile.php">Back to your profile</a>
+      <!-- <a href="profile_yourprofile.php">Back to your profile</a> -->
 
     </div>
 
 
 
-    </div>
+
 
   </section>
 

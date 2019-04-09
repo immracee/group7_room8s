@@ -12,6 +12,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
 
 </head>
@@ -22,7 +24,7 @@
 
     <div class="signup-form">
 
-    <h1 class="text-center">Roommates!</h1>
+    <h1 class="text-center font-maintitle">Roommates!</h1>
 
   	<form action="process-login.php" method="post">
 

@@ -53,17 +53,19 @@ $stmt->execute();
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
-  <section class="signup-form" id="accountsignup">
+  <section class="signup-form confirmchoice signup-formcolor" id="accountsignup">
 
 
-  		<div class="form-group">
+  		<!-- <div class="form-group"> -->
 
         <h2>Confirm your choices</h2>
         <p>Please confirm your choices</p>
@@ -71,9 +73,15 @@ $stmt->execute();
           <p><?php echo($question2); ?><p>
             <p><?php echo($question3); ?><p>
 
-        <a href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
+        <a class="btn btn-primary btn-lg" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
+        <br>
+        <br>
+        <a class="btn btn-primary btn-lg" href="questionnaire.php">Back to questionaire</a>
+        <br>
+        <br>
+        <a  class="btn btn-primary btn-lg" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Back to your profile</a>
 
-
+      <!-- </div> -->
     </section>
 
 </body>

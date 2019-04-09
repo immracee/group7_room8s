@@ -14,11 +14,13 @@
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
@@ -30,27 +32,29 @@
         <h2>Sign up</h2>
         <p>Please enter your information below to create your account</p>
 
-  			<label for="signupFirstName">First name: </label>
-  			<input type="text" class="form-control" id="signupFirstName" name="signupFirstName" placeholder="Enter first name" />
+  			<!-- <label for="signupFirstName">First name: </label> -->
   		</div>
+      <div>
+        <input type="text" class="form-control" id="signupFirstName" name="signupFirstName" placeholder="Enter first name" />
+      </div>
   		<div>
-  			<label for="signupLastName">Last Name: </label>
+  			<!-- <label for="signupLastName">Last Name: </label> -->
   			<input type="text" class="form-control" id="signupLastName" name="signupLastName" placeholder="Enter last name" />
   		</div>
       <div>
-  			<label for="signupEmail">Email: </label>
+  			<!-- <label for="signupEmail">Email: </label> -->
   			<input type="email" class="form-control" id="signupEmail" name="signupEmail" placeholder="youremail@email.com" required />
   		</div>
   		<div>
-  			<label for="signupPhonenumber">Phone number: </label>
+  			<!-- <label for="signupPhonenumber">Phone number: </label> -->
   			<input type="text" class="form-control" id="signupPhonenumber" name="signupPhonenumber" placeholder="905-123-4567" required />
   		</div>
       <div>
-        <label for="signupCity">City: </label>
+        <!-- <label for="signupCity">City: </label> -->
         <input type="text" class="form-control" id="signupCity" name="signupCity" placeholder="Enter city" />
       </div>
       <div>
-        <label for="signupPassword">Password: </label>
+        <!-- <label for="signupPassword">Password: </label> -->
         <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Enter password" />
       </div>
       <!-- <div>

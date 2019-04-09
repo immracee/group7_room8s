@@ -3,9 +3,13 @@ session_start();
 require_once('database.php');
 
 $question1 = $_GET['question1'];
+$question2 = $_GET['question2'];
+$question3 = $_GET['question3'];
 
-$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1'");
+$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE question1 = '$question1' OR question2 = '$question2' OR question3 = '$question3'");
 $stmt->execute();
+
+$row = $stmt->fetch();
 
 if (isset($_SESSION['email']))
 {
@@ -33,11 +37,13 @@ else
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
@@ -48,27 +54,33 @@ else
 
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
-        <p><?php echo($question1); ?><p>
-
-          <?php
-          while($row = $stmt->fetch()) {
-                                        ?>
-          <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
-          <?php
-           }
-           ?>
-
-        <!-- <button class="btn btn-primary btn-lg">Change City</button>
-
-        <button class="btn btn-primary btn-lg"><a href="questionnaire_elena.html" style="color: white;">Modify Questionnaire</a></button> -->
 
 
-        <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
-        <!-- <div>
-          <label for="signupCity">Name</label>
-        </div>
-        <button class="btn btn-primary btn-lg"><a href="profile_match.php" style="color: white;">View Profile</a></button>
-  		</div> -->
+
+        <div >
+       <!-- <p><?php echo($question1); ?><p>
+          <p><?php echo($question2); ?><p>
+            <p><?php echo($question3); ?><p> -->
+            <div id = "q1">
+              <?php
+              while($row = $stmt->fetch()) {
+                                            ?>
+              <div class="matchsection"><p><?php echo($row["firstName"]); ?>
+                <br>
+              <?php echo($row["city"]); ?>
+              <br>
+              <?php echo($row["phone"]);?>
+              <br>
+              <?php echo($row["email"]);?>
+            </p></div>
+
+              <?php
+               }
+               ?>
+               </div>
+          </div>
+
+
 
       <br>
       <div class="form-group">

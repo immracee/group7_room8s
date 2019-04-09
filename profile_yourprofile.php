@@ -5,7 +5,7 @@ session_start();
 if (isset($_SESSION['email']))
 {
      // echo 'logged in';
-     echo($_SESSION['email']);
+     // echo($_SESSION['email']);
      // $displayFirstName =
 }
 else
@@ -40,85 +40,96 @@ $row = $stmt->fetch();
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
 
 
   	<form action="process-signup.php" method="post">
+      <div class="profilesection">
   		<div class="form-group">
 
-        <h2>Your Profile</h2>
+        <h2 class ="font-profileinfotitle">Your Profile</h2>
         <p>Your profile details below</p>
-
+      </div>
 
         <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
-  			<label for="signupFirstName">First name: </label>
+        <div class="usertitledata">
+        <label for="signupFirstName" class="font-profiledetailstitle">First name: </label>
         <!-- <p>Bob</p> -->
 
         <!-- //show records (process results) -->
-        <div>
+        <div class="font-userdetails">
           <?php echo($row["firstName"]);?>
           </div>
+        </div>
 
 
-
-  		</div>
-  		<div>
-  			<label for="signupLastName">Last Name: </label>
-      <div>
+  		<div class="usertitledata">
+  			<label for="signupLastName" class="font-profiledetailstitle">Last Name: </label>
+      <div class="font-userdetails">
           <?php echo($row["lastName"]);?>
       </div>
   		</div>
-      <div>
-  			<label for="signupEmail">Email: </label>
-        <div>
+      <div class="usertitledata">
+  			<label for="signupEmail" class="font-profiledetailstitle">Email: </label>
+        <div class="font-userdetails">
   			<?php echo($row["email"]);?>
       </div>
   		</div>
-  		<div>
-  			<label for="signupPhonenumber">Phone number: </label>
-        <div>
+  		<div class="usertitledata">
+  			<label for="signupPhonenumber" class="font-profiledetailstitle">Phone number: </label>
+        <div class="font-userdetails">
         <?php echo($row["phone"]);?>
       </div>
   		</div>
-      <div>
-        <label for="signupCity">City: </label>
-        <div>
+      <div class="usertitledata">
+        <label for="signupCity" class="font-profiledetailstitle">City: </label>
+      <div class="font-userdetails">
         <?php echo($row["city"]);?>
       </div>
       </div>
-
-
-      <br>
-      <div class="form-group">
-  		<button class="btn btn-primary btn-lg">Edit Account Details</button>
-      <br>
-      <br>
-      <div class="form-group">
-  		<button class="btn btn-primary btn-lg"><a href="changepassword.php" style="color: white;">Change Password</a></button>
-      <br>
-      <br>
-      <button class="btn btn-primary btn-lg"><a href="questionnaire.php" style="color: white;">Complete Questionaire</a></button>
-      <br>
-      <br>
-      <button class="btn btn-primary btn-lg"><a href="viewmatches.php" style="color: white;">View Matches</a></button>
-      <br>
-      <br>
-
-      <br>
-      <br>
     </div>
+
+
+      <!-- <br>
+      <div class="form-group">
+  		<button class="btn btn-primary btn-lg" href="changepassword.php">Edit Account Details</button>
+    </div> -->
+
+      <!-- <br>
+      <br>
+      <div class="form-group"> -->
+  		<!-- <button class="btn btn-primary btn-lg"> -->
+        <!-- <a href="changepassword.php" class="btn btn-primary btn-lg" style="color: white;">Change Password</a> -->
+      <!-- </button> -->
+      <!-- <br>
+      <br> -->
+
+      <!-- <button class="btn btn-primary btn-lg"> -->
+        <a href="questionnaire.php" class="btn btn-primary btn-lg" style="color: white;">Complete Questionaire</a>
+        <br>
+      <!-- </button> -->
+      <!-- <button class="btn btn-primary btn-lg" > -->
+      <!-- <a href="viewmatches.php" class="btn btn-primary btn-lg" style="color: white;">View Matches</a> -->
+      <!-- </button> -->
+      <br>
+
+      <a href="process-logout.php" class="btn btn-primary btn-lg" style="color: white;">Logout</a>
+    </div>
+
   	</form>
 
-    <form action="process-logout.php" method="post">
-      <button>Logout</button>
-    </form>
+    <!-- <form action="process-logout.php" method="post"> -->
+      <!-- <button><a href="process-logout.php" class="btn btn-primary btn-lg">Logout</a></button> -->
+    <!-- </form> -->
 
   </section>
 

@@ -84,5 +84,9 @@ $stmt->execute();
       <!-- </div> -->
     </section>
 
+     <div class="footer">
+        Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+    </div>
+
 </body>
 </html>

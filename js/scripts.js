@@ -50,11 +50,11 @@ function loadLocations(){
   //kitchener
   //get rentals and display below map
   for (i=0; i < locations.length; i++){
-    var rental = locations[i].name
-    + "<br> Bdrms: " + locations[i].bdrms
+    var rental = "<h4>"+  locations[i].name + "</h4>"
+    + "Bdrms: " + locations[i].bdrms
     + "<br> Bath: "+ locations[i].bath
     + "<br> Price: " + locations[i].price;
-    
+
     var displayRentals = document.getElementById("displayRentals");
     var rentals = document.createElement("div");
     rentals.innerHTML = rental;
@@ -99,7 +99,6 @@ var onResult = function(result) {
     var locations = result.Response.View[0].Result,
     position,
     marker;
-    console.log(locations);
     map.setCenter({
         lat: locations[0].Location.DisplayPosition.Latitude,
         lng: locations[0].Location.DisplayPosition.Longitude},

@@ -26,17 +26,24 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 
   <body>
+    <div class="container-fluid">
+        <div class="row" id="head-row">
+            Room8s Rental Finder
+        </div>
 
-      <input type="text" name="location" id="location">
-      <button type="submit" name="button" id="submitLocation">submit</button>
-      <br/> <br/>
+        <input type="text" name="location" id="location"><br/>
+        <button type="submit" name="button" id="submitLocation">submit</button>
+        <br/> <br/>
 
-    <div style="width: 640px; height: 480px" id="mapContainer"></div>
+        <div style="width: 640px; height: 480px" id="mapContainer"></div>
 
-    <div id="displayRentals">
+        <div id="displayRentals"></div>
 
+      <script src="./js/scripts.js"></script>
     </div>
 
-  <script src="./js/scripts.js"></script>
+    <div class="footer">
+         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+     </div>
   </body>
 </html>

@@ -61,7 +61,7 @@ else
   <section class="signup-form" id="accountsignup">
 
 
-   <!-- <form action="process-signup.php" method="post"> -->
+   <form action="process-signup.php" method="post">
   		<div class="form-group">
 
         <h2>Your Matches</h2>

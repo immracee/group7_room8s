@@ -74,9 +74,9 @@ else
         </div>
 
 
-       <p><?php echo($question1); ?><p>
+       <!-- <p><?php echo($question1); ?><p>
           <p><?php echo($question2); ?><p>
-            <p><?php echo($question3); ?><p>
+            <p><?php echo($question3); ?><p> -->
             <div id = "q1">
               <?php
               while($row = $stmt1->fetch()) {

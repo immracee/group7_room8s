@@ -74,9 +74,7 @@ else
         </div>
 
 
-       <!-- <p><?php echo($question1); ?><p>
-          <p><?php echo($question2); ?><p>
-            <p><?php echo($question3); ?><p> -->
+
             <div id = "q1">
               <?php
               while($row = $stmt1->fetch()) {
@@ -175,7 +173,13 @@ else
       <br>
     </div>
   	</form>
+
+
   </section>
+
+  <div class="footer">
+      Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+  </div>
 
 </body>
 <script>

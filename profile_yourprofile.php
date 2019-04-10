@@ -131,12 +131,13 @@ $row = $stmt->fetch();
       <!-- <button><a href="process-logout.php" class="btn btn-primary btn-lg">Logout</a></button> -->
     <!-- </form> -->
 
-    
+
 
   </section>
   <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
     </div>
+    <br>
 
 </body>
 </html>

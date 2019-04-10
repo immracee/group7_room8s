@@ -72,7 +72,10 @@
       <br>
       <div class="form-group">
   		<button class="btn btn-primary btn-lg">Register</button>
+      <br>
+      <br>
       <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
+    <br>
     </div>
   	</form>
 

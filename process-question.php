@@ -69,11 +69,11 @@ $stmt->execute();
 
         <h2>Confirm your choices</h2>
         <p>Please confirm your choices</p>
-        <p><?php echo($question1); ?><p>
-          <p><?php echo($question2); ?><p>
-            <p><?php echo($question3); ?><p>
+        <p class="confirmchoices"><?php echo($question1); ?></p>
+          <p class="confirmchoices"><?php echo($question2); ?></p>
+            <p class="confirmchoices"><?php echo($question3); ?></p>
 
-        <a class="btn btn-primary btn-lg" style="color: white;" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
+        <a class="btn btn-primary btn-lg" style="color: white;" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">View your matches</a>
         <br>
         <br>
         <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>

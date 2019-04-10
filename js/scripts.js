@@ -14,12 +14,28 @@ function loadLocations(){
     case 'kitchener':
       locations = [
         {
-          name: 'Trio on Belmont',
-          Bdrms: 2,
-          Bath: 1.5,
-          Price: '$1700',
+          name: "Trio on Belmont",
+          bdrms: 2,
+          bath: 1.5,
+          price: "$1700",
           lat:43.446410,
           lng:-80.513170
+        },
+        {
+          name: "The Regency",
+          bdrms: 1,
+          bath: 1,
+          price: "$1500",
+          lat:43.451590,
+          lng:-80.487380
+        },
+        {
+          name: "Ironhorse Towers",
+          bdrms: 2,
+          bath: 1,
+          price: "$1860",
+          lat:43.443830,
+          lng:-80.496060
         }
       ];
       break;
@@ -29,6 +45,21 @@ function loadLocations(){
     default:
       locations = [];
       break;
+  }
+
+  //kitchener
+  //get rentals and display below map
+  for (i=0; i < locations.length; i++){
+    var rental = locations[i].name
+    + "<br> Bdrms: " + locations[i].bdrms
+    + "<br> Bath: "+ locations[i].bath
+    + "<br> Price: " + locations[i].price;
+    
+    var displayRentals = document.getElementById("displayRentals");
+    var rentals = document.createElement("div");
+    rentals.innerHTML = rental;
+
+    displayRentals.appendChild(rentals);
   }
 }
 

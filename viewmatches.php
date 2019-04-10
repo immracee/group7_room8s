@@ -58,8 +58,8 @@ else
 
   <section class="signup-form" id="accountsignup">
 
-
-   <!-- <form action="process-signup.php" method="post"> -->
+   <div class="result">
+   <form action="" method="">
   		<div class="form-group">
 
         <h2>Your Matches</h2>
@@ -144,14 +144,14 @@ else
 
 
       <br>
-      <div class="form-group">
-      <br>
-      <br>
+     
+      
       <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php" style="color: white;">Return to your profile</a></button>
       <br>
       <br>
     </div>
-  	</form>
+              </form>          
+  </div>
   </section>
 
 </body>

@@ -64,7 +64,6 @@ else
    <form action="process-signup.php" method="post">
   		<div class="form-group">
 
-        <!-- elena branch test -->
 
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
@@ -82,7 +81,10 @@ else
               <?php
               while($row = $stmt1->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                </div>
+
               <?php
                }
                ?>
@@ -91,7 +93,10 @@ else
               <?php
               while($row = $stmt2->fetch()) {
                                             ?>
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
+
               <?php
                }
                ?>
@@ -100,7 +105,9 @@ else
               <?php
               while($row = $stmt3->fetch()) {
                                             ?>
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
               <?php
                }
                ?>
@@ -111,7 +118,10 @@ else
               <?php
               while($row = $stmt4->fetch()) {
                                             ?>
+
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
               <?php
                }
                ?>
@@ -120,7 +130,10 @@ else
               <?php
               while($row = $stmt5->fetch()) {
                                             ?>
+
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
               <?php
                }
                ?>
@@ -130,7 +143,10 @@ else
               <?php
               while($row = $stmt6->fetch()) {
                                             ?>
+
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
               <?php
                }
                ?>
@@ -139,7 +155,10 @@ else
               <?php
               while($row = $stmtAll->fetch()) {
                                             ?>
+
+              <div class="matchsection">
               <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              </div>
               <?php
                }
                ?>

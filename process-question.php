@@ -64,8 +64,8 @@ $stmt->execute();
 
   <section class="signup-form confirmchoice signup-formcolor" id="accountsignup">
 
-
-  		<!-- <div class="form-group"> -->
+<form>
+  		<div class="form-group">
 
         <h2>Confirm your choices</h2>
         <p>Please confirm your choices</p>
@@ -81,12 +81,14 @@ $stmt->execute();
         <br>
         <a  class="btn btn-primary btn-lg" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Back to your profile</a>
 
-      <!-- </div> -->
+      </div>
+    </form>
     </section>
 
      <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
     </div>
+
 
 </body>
 </html>

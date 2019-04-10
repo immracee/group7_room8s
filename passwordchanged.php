@@ -4,8 +4,8 @@ session_start();
 
 if (isset($_SESSION['email']))
 {
-     // echo 'logged in';
-     echo($_SESSION['email']);
+     echo 'logged in';
+     // echo($_SESSION['email']);
      // $displayFirstName =
 }
 else

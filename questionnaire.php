@@ -9,7 +9,8 @@ if($_SESSION['logged-in'] == false) {
   $stmt = $pdo->prepare("SELECT * FROM `signupRoommate` ");
   $stmt->execute();
   $row = $stmt->fetch();
-  echo($_SESSION['email']);
+  // echo($_SESSION['email']);
+  echo('logged in');
 }
   ?>
 

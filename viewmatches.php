@@ -80,7 +80,14 @@ else
               while($row = $stmt1->fetch()) {
                                             ?>
                 <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
                 </div>
 
               <?php
@@ -92,19 +99,34 @@ else
               while($row = $stmt2->fetch()) {
                                             ?>
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
 
               <?php
                }
                ?>
                </div>
+
             <div id = "q3">
               <?php
               while($row = $stmt3->fetch()) {
                                             ?>
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
               <?php
                }
@@ -118,7 +140,14 @@ else
                                             ?>
 
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
               <?php
                }
@@ -130,7 +159,14 @@ else
                                             ?>
 
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
               <?php
                }
@@ -143,7 +179,14 @@ else
                                             ?>
 
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
               <?php
                }
@@ -155,7 +198,14 @@ else
                                             ?>
 
               <div class="matchsection">
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
               </div>
               <?php
                }
@@ -166,6 +216,9 @@ else
 
       <br>
       <div class="form-group">
+      <br>
+      <br>
+        <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
       <br>
       <br>
       <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php" style="color: white;">Return to your profile</a></button>

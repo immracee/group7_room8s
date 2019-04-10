@@ -49,17 +49,19 @@ else
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
 
-   <div class="result">
-   <form action="" method="">
+
+   <!-- <form action="process-signup.php" method="post"> -->
   		<div class="form-group">
 
         <h2>Your Matches</h2>
@@ -144,14 +146,14 @@ else
 
 
       <br>
-     
-      
+      <div class="form-group">
+      <br>
+      <br>
       <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php" style="color: white;">Return to your profile</a></button>
       <br>
       <br>
     </div>
-              </form>          
-  </div>
+  	</form>
   </section>
 
 </body>

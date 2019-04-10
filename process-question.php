@@ -73,13 +73,13 @@ $stmt->execute();
           <p><?php echo($question2); ?><p>
             <p><?php echo($question3); ?><p>
 
-        <a class="btn btn-primary btn-lg" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
+        <a class="btn btn-primary btn-lg" style="color: white;" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Show result</a>
         <br>
         <br>
-        <a class="btn btn-primary btn-lg" href="questionnaire.php">Back to questionaire</a>
+        <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
         <br>
         <br>
-        <a  class="btn btn-primary btn-lg" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Back to your profile</a>
+        <a class="btn btn-primary btn-lg"  style="color: white;" href="viewmatches.php?question1=<?php echo($question1); ?>&question2=<?php echo($question2); ?>&question3=<?php echo($question3); ?>">Back to your profile</a>
 
       </div>
     </form>

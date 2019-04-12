@@ -46,19 +46,21 @@
       <br>
       <div class="form-group">
             <button type="submit" class="btn btn-primary btn-lg">Login now</button>
+            <br>
+            <br>
             <div class="text-center">Don't have an account? <a href="signup.php">Sign up now</a></div>
     </div>
       </form>
 
     </div>
 
-   
+
 
   </section>
 
    <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
-    </div>
+  </div>
 
 </body>
 </html>

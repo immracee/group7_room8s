@@ -49,18 +49,21 @@ else
 
 
 <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,800" rel="stylesheet">
 </head>
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
 
-   <div class="result">
-   <form action="" method="">
+
+   <form action="process-signup.php" method="post">
   		<div class="form-group">
+
 
         <h2>Your Matches</h2>
         <p>View your compatible matches!</p>
@@ -71,14 +74,22 @@ else
         </div>
 
 
-       <p><?php echo($question1); ?><p>
-          <p><?php echo($question2); ?><p>
-            <p><?php echo($question3); ?><p>
+
             <div id = "q1">
               <?php
               while($row = $stmt1->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+                <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+                </div>
+
               <?php
                }
                ?>
@@ -87,16 +98,36 @@ else
               <?php
               while($row = $stmt2->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
+
               <?php
                }
                ?>
                </div>
+
             <div id = "q3">
               <?php
               while($row = $stmt3->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
               <?php
                }
                ?>
@@ -107,7 +138,17 @@ else
               <?php
               while($row = $stmt4->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
               <?php
                }
                ?>
@@ -116,7 +157,17 @@ else
               <?php
               while($row = $stmt5->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
               <?php
                }
                ?>
@@ -126,7 +177,17 @@ else
               <?php
               while($row = $stmt6->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
               <?php
                }
                ?>
@@ -135,7 +196,17 @@ else
               <?php
               while($row = $stmtAll->fetch()) {
                                             ?>
-              <p>Name: <?php echo($row["firstName"]); ?>   City: <?php echo($row["city"]); ?></p>
+
+              <div class="matchsection">
+                <p>Name: <?php echo($row["firstName"]); ?>
+                  <br>
+                  City: <?php echo($row["city"]); ?>
+                  <br>
+                  Phone: <?php echo($row["phone"]); ?>
+                  <br>
+                  Email: <?php echo($row["email"]); ?>
+                </p>
+              </div>
               <?php
                }
                ?>
@@ -144,15 +215,24 @@ else
 
 
       <br>
-     
-      
+      <div class="form-group">
+      <br>
+      <br>
+        <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
+      <br>
+      <br>
       <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php" style="color: white;">Return to your profile</a></button>
       <br>
       <br>
     </div>
-              </form>          
-  </div>
+  	</form>
+
+
   </section>
+
+  <div class="footer">
+      Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+  </div>
 
 </body>
 <script>

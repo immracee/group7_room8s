@@ -19,6 +19,11 @@ body{
 
 }
 
+.confirmchoices {
+  color: #bd5628;
+  font-size: 28px;
+}
+
 .matchsection {
   background: #F1C26E;
   margin-top: 30px;

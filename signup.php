@@ -72,7 +72,10 @@
       <br>
       <div class="form-group">
   		<button class="btn btn-primary btn-lg">Register</button>
+      <br>
+      <br>
       <div class="text-center">Already have an account? <a href="login.php">Login here</a></div>
+    <br>
     </div>
   	</form>
 
@@ -80,6 +83,8 @@
   <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
     </div>
+
+
 
 </body>
 </html>

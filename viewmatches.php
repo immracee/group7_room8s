@@ -84,9 +84,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
                 </div>
 
@@ -103,9 +103,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
 
@@ -123,9 +123,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
               <?php
@@ -144,9 +144,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
               <?php
@@ -163,9 +163,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
               <?php
@@ -183,9 +183,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
               <?php
@@ -202,9 +202,9 @@ else
                   <br>
                   City: <?php echo($row["city"]); ?>
                   <br>
-                  Phone: <?php echo($row["phone"]); ?>
+                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
                   <br>
-                  Email: <?php echo($row["email"]); ?>
+                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
                 </p>
               </div>
               <?php

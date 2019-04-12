@@ -34,9 +34,9 @@
           <p>Get matched with the right roommate for you with our matching system! Get started by creating an account.</p>
         </div>
 
-      <div class="form-group">
-            <button type="submit" class="btn btn-primary btn-lg"><a href="signup.php" style="color: white;">Create account</a></button>
-    </div>
+      <!-- <div class="form-group"> -->
+            <a href="signup.php" class="btn btn-primary btn-lg" style="color: white;">Create account</a>
+    <!-- </div> -->
     <div class="text-center">Already have an account? <a href="login.php">Log in</a></div>
       </form>
     </div>

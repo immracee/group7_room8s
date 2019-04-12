@@ -13,7 +13,6 @@ else
      header("Location: loginfail.php");
 }
 
-
 require_once 'database.php';
 
 $email = $_SESSION['email'];
@@ -129,12 +128,6 @@ $row = $stmt->fetch();
     </div>
 
   	</form>
-
-    <!-- <form action="process-logout.php" method="post"> -->
-      <!-- <button><a href="process-logout.php" class="btn btn-primary btn-lg">Logout</a></button> -->
-    <!-- </form> -->
-
-
 
   </section>
   <div class="footer">

@@ -19,6 +19,22 @@ body{
 
 }
 
+.results-name {
+  color: white;
+}
+
+.results-city {
+  color: white;
+}
+
+.results-phone a:link {
+  color: white;
+}
+
+.results-email a:link {
+  color: white;
+}
+
 .confirmchoices {
   color: #bd5628;
   font-size: 28px;

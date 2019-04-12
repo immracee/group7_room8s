@@ -60,10 +60,10 @@ $row = $stmt->fetch();
         <p>Your profile details below</p>
       </div>
 
-        <!-- placeholder data for now, will use PHP to display database data from signupRoommates table -->
+
         <div class="usertitledata">
         <label for="signupFirstName" class="font-profiledetailstitle">First name: </label>
-        <!-- <p>Bob</p> -->
+
 
         <!-- //show records (process results) -->
         <div class="font-userdetails">
@@ -88,7 +88,7 @@ $row = $stmt->fetch();
   			<label for="signupPhonenumber" class="font-profiledetailstitle">Phone number: </label>
         <div class="font-userdetails">
         <?php echo($row["phone"]);?>
-      </div>
+        </div>
   		</div>
       <div class="usertitledata">
         <label for="signupCity" class="font-profiledetailstitle">City: </label>

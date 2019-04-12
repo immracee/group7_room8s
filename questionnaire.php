@@ -48,7 +48,7 @@ if($_SESSION['logged-in'] == false) {
 
 
   	<form action="process-question.php" method="post">
-      <h2>Questionaire</h2>
+      <h2>Matching Questionaire</h2>
         <div id="question1">
         <p>Are you an early bird or a night owl?</p>
         <div class="form-check form-check-inline">

@@ -84,9 +84,9 @@ else
 
                   <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
 
-                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+                  <p class="results-phone">Phone: <a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></p>
 
-                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
+                  <p class="results-email">Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></p>
 
                 </div>
 

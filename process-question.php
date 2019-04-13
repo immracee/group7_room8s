@@ -14,7 +14,7 @@ require_once('database.php');
   $email = $_POST['email'];
 
 // $stmt = $pdo->prepare("INSERT INTO `signupRoommate` (`firstName`, `lastName`, `phone`, `email`, `city`, `password`) VALUES ('$firstName', '$lastName', '$phone', '$email', '$city', '$password'); ");
-$stmt = $pdo->prepare("UPDATE `signupRoommate` SET `question1` = '$question1' , `question2` = '$question2' , `question3` = '$question3' WHERE `email` = '$email'");
+$stmt = $pdo->prepare("UPDATE `signuproommate` SET `question1` = '$question1' , `question2` = '$question2' , `question3` = '$question3' WHERE `email` = '$email'");
 
 
 

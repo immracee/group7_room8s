@@ -109,9 +109,9 @@ $row = $stmt->fetch();
 
       <!-- <button class="btn btn-primary btn-lg"> -->
         <a href="questionnaire.php" class="btn btn-primary btn-lg" style="color: white;">Complete Questionaire</a>
+        <!-- <br>
         <br>
-        <br>
-        <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a>
+        <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a> -->
         <br>
         <br>
         <div class="form-group">

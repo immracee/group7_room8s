@@ -211,9 +211,9 @@ else
       <br>
       <div class="form-group">
       <br>
-      <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a>
+      <!-- <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a>
       <br>
-      <br>
+      <br> -->
       <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
       <br>
       <br>

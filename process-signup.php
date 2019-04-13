@@ -15,7 +15,7 @@ $password='';
   $city = $_POST['signupCity'];
   $password = $_POST['signupPassword'];
 
-$stmt = $pdo->prepare("INSERT INTO `signupRoommate` (`firstName`, `lastName`, `phone`, `email`, `city`, `password`) VALUES ('$firstName', '$lastName', '$phone', '$email', '$city', '$password'); ");
+$stmt = $pdo->prepare("INSERT INTO `signuproommate` (`firstName`, `lastName`, `phone`, `email`, `city`, `password`) VALUES ('$firstName', '$lastName', '$phone', '$email', '$city', '$password'); ");
 
 $stmt->execute();
 

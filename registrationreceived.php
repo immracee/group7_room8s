@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App</title>
+<title>Roommates App - Registration Received </title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">

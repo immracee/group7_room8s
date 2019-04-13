@@ -18,7 +18,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Change Phone Number</title>
+<title>Roommates App - Phone Number Changed</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">

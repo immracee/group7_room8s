@@ -5,7 +5,7 @@ $email = $_POST['loginUsername'];
 $password = $_POST['loginPassword'];
 
 
-$stmt = $pdo->prepare("SELECT * FROM `signupRoommate` WHERE `email` = '$email' AND `password` = '$password'");
+$stmt = $pdo->prepare("SELECT * FROM `signuproommate` WHERE `email` = '$email' AND `password` = '$password'");
 
 $stmt->execute();
 

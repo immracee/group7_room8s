@@ -4,35 +4,29 @@ html {
 
 body{
   color: #35312F;
-  /* color: #35312F; */
-  /* color: #fff; */
-  /* color: #F1C26E; */
-  /* background: #E88F24; */
   background-image: linear-gradient(#E88F24, #DF7626);
   height: 100%;
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* background-image: linear-gradient(red, yellow); */
-  /* font-family: 'Roboto', sans-serif; */
   font-family: 'ABeeZee', sans-serif;
 
 }
 
 .results-name {
-  color: white;
+  color: #683700;
 }
 
 .results-city {
-  color: white;
+  color: #683700;
 }
 
 .results-phone a:link {
-  color: white;
+  color: #683700;
 }
 
 .results-email a:link {
-  color: white;
+  color: #683700;
 }
 
 .editdetails {
@@ -108,25 +102,17 @@ body{
 
 .signup-form form{
   color: #35312F;
-  /* color: #999; */
   border-radius: 3px;
     margin-bottom: 15px;
     background: #fffdf9;
-      /* background: #F1C26E; */
-      /* background: #F1C26E; */
-      /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
       box-shadow: 0px 2px 2px rgba(0, 0.9, 0, 0.9);
       padding: 30px;
   }
   .signup-form .result {
     color: #35312F;
-    /* color: #999; */
     border-radius: 3px;
       margin-bottom: 15px;
       background: #fffdf9;
-        /* background: #F1C26E; */
-        /* background: #F1C26E; */
-        /* box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); */
         box-shadow: 0px 2px 2px rgba(0, 0.9, 0, 0.9);
         padding: 30px;
     }

@@ -19,12 +19,15 @@
 </head>
 
 <body>
-  <header>
-      <h1 class="text-center font-maintitle">Roommates!</h1>
-  </header>
 
-  <section class="signup-form" id="accountsignup">
 
+  <section id="accountsignup">
+
+    <div class="signup-form">
+
+      <header>
+          <h1 class="text-center font-maintitle">Roommates!</h1>
+      </header>
 
   	<form action="process-signup.php" method="post">
   		<div class="form-group">
@@ -62,13 +65,6 @@
         <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Confirm password" />
       </div> -->
 
-    <!-- haven't tested radio buttons yet - Elena -->
-    <!--
-      <input type="radio" class="radio" name="signupGender" value="male" id="signupGenderMale" />
-      <label for="male">Male</label>
-      <input type="radio" class="radio" name="signupGender" value="female" id="signupGenderFemale" />
-      <label for="female">Female</label> -->
-
       <br>
       <div class="form-group">
   		<button class="btn btn-primary btn-lg">Register</button>
@@ -79,6 +75,7 @@
     </div>
   	</form>
 
+  </div>
   </section>
   <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>

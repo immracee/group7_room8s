@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App</title>
+<title>Roommates App - Login Failed</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -42,6 +42,6 @@
 <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
     </div>
-    
+
 </body>
 </html>

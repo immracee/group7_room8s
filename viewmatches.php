@@ -22,7 +22,7 @@ $stmt6->execute();
 // $row = $stmt->fetch();
 if (isset($_SESSION['email']))
 {
-     echo 'logged in';
+     // echo 'logged in';
 }
 else
 {

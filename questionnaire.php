@@ -2,7 +2,7 @@
 session_start();
 
 if($_SESSION['logged-in'] == false) {
-    header("Location: login.php");
+    // header("Location: login.php");
 }else{
 
   require_once('database.php');
@@ -10,7 +10,7 @@ if($_SESSION['logged-in'] == false) {
   $stmt->execute();
   $row = $stmt->fetch();
   // echo($_SESSION['email']);
-  echo('logged in');
+  // echo('logged in');
 }
   ?>
 

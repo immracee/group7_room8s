@@ -67,6 +67,7 @@ $row = $stmt->fetch();
         <!-- //show records (process results) -->
         <div class="font-userdetails">
           <?php echo($row["firstName"]);?>
+          <p class="editdetails"><a href="changefirstname.php">edit first name</a></p>
           </div>
         </div>
 
@@ -75,6 +76,7 @@ $row = $stmt->fetch();
   			<label for="signupLastName" class="font-profiledetailstitle">Last Name: </label>
       <div class="font-userdetails">
           <?php echo($row["lastName"]);?>
+          <p class="editdetails"><a href="changelastname.php">edit last name</a></p>
       </div>
   		</div>
       <div class="usertitledata">
@@ -87,12 +89,14 @@ $row = $stmt->fetch();
   			<label for="signupPhonenumber" class="font-profiledetailstitle">Phone number: </label>
         <div class="font-userdetails">
         <?php echo($row["phone"]);?>
+        <p class="editdetails"><a href="changephonenumber.php">edit phone number</a></p>
         </div>
   		</div>
       <div class="usertitledata">
         <label for="signupCity" class="font-profiledetailstitle">City: </label>
       <div class="font-userdetails">
         <?php echo($row["city"]);?>
+        <p class="editdetails"><a href="changecity.php">edit city</a></p>
       </div>
       </div>
     </div>
@@ -103,34 +107,29 @@ $row = $stmt->fetch();
   		<button class="btn btn-primary btn-lg" href="changepassword.php">Edit Account Details</button>
     </div> -->
 
-      <!-- <br>
-      <br>
-      <div class="form-group"> -->
-  		<!-- <button class="btn btn-primary btn-lg"> -->
-        <!-- <a href="changepassword.php" class="btn btn-primary btn-lg" style="color: white;">Change Password</a> -->
-      <!-- </button> -->
-      <!-- <br>
-      <br> -->
-
       <!-- <button class="btn btn-primary btn-lg"> -->
         <a href="questionnaire.php" class="btn btn-primary btn-lg" style="color: white;">Complete Questionaire</a>
         <br>
         <br>
         <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a>
         <br>
+        <br>
+        <div class="form-group">
+          <a href="changepassword.php" class="btn btn-primary btn-lg" style="color: white;">Change Password</a>
+        <br>
+        <br>
       <!-- </button> -->
       <!-- <button class="btn btn-primary btn-lg" > -->
       <!-- <a href="viewmatches.php" class="btn btn-primary btn-lg" style="color: white;">View Matches</a> -->
       <!-- </button> -->
-      <br>
 
       <a href="process-logout.php" class="btn btn-primary btn-lg" style="color: white;">Logout</a>
     </div>
 
   	</form>
 
-  </section>
-  <div class="footer">
+    </section>
+    <div class="footer">
         Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
     </div>
     <br>

@@ -18,7 +18,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Change Password</title>
+<title>Roommates App - Change City</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -35,19 +35,28 @@ else
 
 <body>
   <header>
-      <h1 class="text-center">Roommates!</h1>
+      <h1 class="text-center font-maintitle">Roommates!</h1>
   </header>
 
   <section class="signup-form" id="accountsignup">
 
 
-  	<form action="process-changepassword.php" method="post">
+  	<form action="process-changecity.php" method="post">
   		<div class="form-group">
 
-        <h2>Password changed</h2>
-        <p>Your password has been successfully changed!</p>
+        <h2>Change City</h2>
+        <p>Change your city below.</p>
+
+  		</div>
 
       <div class="form-group">
+              <input type="text" id="signupCity" class="form-control" name="signupCity">
+          </div>
+
+
+      <div class="form-group">
+  		<button class="btn btn-primary btn-lg">Change City</button>
+      </form>
       <br>
       <br>
       <a href="profile_yourprofile.php" class="btn btn-primary btn-lg" style="color: white;">Back</a>
@@ -55,16 +64,8 @@ else
       <br>
 
     </div>
-  	</form>
-
-
-
 
   </section>
-
-  <div class="footer">
-      Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
-  </div>
 
 </body>
 </html>

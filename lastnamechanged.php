@@ -18,7 +18,7 @@ else
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Change Password</title>
+<title>Roommates App - Change Last Name</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -41,24 +41,22 @@ else
   <section class="signup-form" id="accountsignup">
 
 
-  	<form action="process-changepassword.php" method="post">
+  	<form>
   		<div class="form-group">
 
-        <h2>Password changed</h2>
-        <p>Your password has been successfully changed!</p>
+        <h2>Last name changed</h2>
+        <p>Your last name has been successfully changed!</p>
 
       <div class="form-group">
       <br>
       <br>
-      <a href="profile_yourprofile.php" class="btn btn-primary btn-lg" style="color: white;">Back</a>
-      <br>
-      <br>
+
 
     </div>
   	</form>
-
-
-
+    <a href="profile_yourprofile.php" class="btn btn-primary btn-lg" style="color: white;">Back</a>
+    <br>
+    <br>
 
   </section>
 

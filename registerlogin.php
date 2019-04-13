@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Roommates App - Main Page</title>
+<title>Roommates App - Login</title>
 <meta charset="utf-8" />
 <meta name="description" content="Find a roommate!">
 <meta name="keywords" content="roommates, moving, relocation, accomodation">
@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 
 <link rel="stylesheet" type="text/css" href="styles.css">
 <link href="https://fonts.googleapis.com/css?family=ABeeZee" rel="stylesheet">
@@ -20,8 +21,8 @@
 
 <body>
 
-  <section id="login">
 
+  <section id="login">
     <div class="signup-form">
 
     <h1 class="text-center font-maintitle">Roommates!</h1>
@@ -29,25 +30,37 @@
   	<form action="process-login.php" method="post">
 
 
-        <div class="form-group">
+      <h2>Registration successful!</h2>
 
-          <p>Get matched with the right roommate for you with our matching system! Get started by creating an account.</p>
+        <p>Please enter your email and password to login.</p>
+
+
+        <div class="form-group">
+        	<input type="email" id="loginUsername" class="form-control" name="loginUsername" placeholder="Email" required="required">
         </div>
 
-      <!-- <div class="form-group"> -->
-            <a href="signup.php" class="btn btn-primary btn-lg" style="color: white;">Create account</a>
-    <!-- </div> -->
-    <div class="text-center">Already have an account? <a href="login.php">Log in</a></div>
+		<div class="form-group">
+            <input type="password" id="loginPassword" class="form-control" name="loginPassword" placeholder="Password" required="required">
+        </div>
+
+      <br>
+      <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg">Login now</button>
+            <br>
+            <br>
+            <div class="text-center">Don't have an account? <a href="signup.php">Sign up now</a></div>
+    </div>
       </form>
+
     </div>
 
-
-    <div class="footer">
-        Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
-    </div>
 
 
   </section>
+
+   <div class="footer">
+        Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+  </div>
 
 </body>
 </html>

@@ -51,5 +51,6 @@ $stmt->execute();
 
 
 // header("Location: profile_yourprofile.php");
-header("Location: login.php");
+// header("Location: login.php");
+header("Location: registerlogin.php");
 ?>

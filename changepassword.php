@@ -44,11 +44,8 @@ else
   	<form action="process-changepassword.php" method="post">
   		<div class="form-group">
 
-        <h2>Your Profile</h2>
-        <p>Your profile details below</p>
-
-
-
+        <h2>Change Password</h2>
+        <p>Change your password below.</p>
 
   		</div>
 
@@ -68,9 +65,6 @@ else
     </div>
   	</form>
 
-    <form action="process-logout.php" method="post">
-      <button>Logout</button>
-    </form>
 
   </section>
 

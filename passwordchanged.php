@@ -4,7 +4,7 @@ session_start();
 
 if (isset($_SESSION['email']))
 {
-     echo 'logged in';
+     // echo 'logged in';
      // echo($_SESSION['email']);
      // $displayFirstName =
 }
@@ -50,21 +50,21 @@ else
       <div class="form-group">
       <br>
       <br>
-      <a href="profile_yourprofile.php"><button class="btn btn-primary btn-lg" style="color: white;">Back</button></a>
+      <a href="profile_yourprofile.php" class="btn btn-primary btn-lg" style="color: white;">Back</a>
       <br>
       <br>
 
     </div>
   	</form>
-    <form action="process-logout.php" method="post">
-      <button>Logout</button>
-    </form>
 
-    <div class="footer">
-        Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
-    </div>
+
+
 
   </section>
+
+  <div class="footer">
+      Made with by <a href="#">Us</a>. For more infomation, please send us a  <a href="mailto:name@email.com">E-mail.</a>
+  </div>
 
 </body>
 </html>

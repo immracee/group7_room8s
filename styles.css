@@ -19,6 +19,28 @@ body{
 
 }
 
+.results-name {
+  color: white;
+}
+
+.results-city {
+  color: white;
+}
+
+.results-phone a:link {
+  color: white;
+}
+
+.results-email a:link {
+  color: white;
+}
+
+.editdetails {
+  font-size: 16px;
+  margin-top: -7px;
+  color: grey;
+}
+
 .confirmchoices {
   color: #bd5628;
   font-size: 28px;

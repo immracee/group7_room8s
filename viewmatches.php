@@ -22,7 +22,7 @@ $stmt6->execute();
 // $row = $stmt->fetch();
 if (isset($_SESSION['email']))
 {
-     echo 'logged in';
+     // echo 'logged in';
 }
 else
 {
@@ -80,14 +80,14 @@ else
               while($row = $stmt1->fetch()) {
                                             ?>
                 <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p class="results-phone">Phone: <a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></p>
+
+                  <p class="results-email">Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></p>
+
                 </div>
 
               <?php
@@ -99,14 +99,13 @@ else
               while($row = $stmt2->fetch()) {
                                             ?>
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
 
               <?php
@@ -119,14 +118,13 @@ else
               while($row = $stmt3->fetch()) {
                                             ?>
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
               <?php
                }
@@ -140,14 +138,13 @@ else
                                             ?>
 
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
               <?php
                }
@@ -159,14 +156,13 @@ else
                                             ?>
 
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
               <?php
                }
@@ -179,14 +175,13 @@ else
                                             ?>
 
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
               <?php
                }
@@ -198,14 +193,13 @@ else
                                             ?>
 
               <div class="matchsection">
-                <p>Name: <?php echo($row["firstName"]); ?>
-                  <br>
-                  City: <?php echo($row["city"]); ?>
-                  <br>
-                  Phone: <a href="tel:<?php echo($row["phone"]); ?>"><?php echo($row["phone"]); ?></a>
-                  <br>
-                  Email: <a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a>
-                </p>
+                <p>Name: <span class="results-name"><?php echo($row["firstName"]); ?></span></p>
+
+                  <p>City: <span class="results-city"><?php echo($row["city"]); ?></span></p>
+
+                  <p>Phone: <span class="results-phone"><a href="tel:<?php echo($row["phone"]);?>"><?php echo($row["phone"]); ?></a></span></p>
+
+                  <p>Email: <span class="results-email"><a href="mailto:<?php echo($row["email"]); ?>"><?php echo($row["email"]); ?></a></span></p>
               </div>
               <?php
                }
@@ -217,15 +211,17 @@ else
       <br>
       <div class="form-group">
       <br>
+      <a href="rentalapi.php" class="btn btn-primary btn-lg" style="color: white;">Search Apartments</a>
       <br>
-        <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
+      <br>
+      <a class="btn btn-primary btn-lg" style="color: white;" href="questionnaire.php">Back to questionaire</a>
       <br>
       <br>
       <button class="btn btn-primary btn-lg"><a href="profile_yourprofile.php" style="color: white;">Return to your profile</a></button>
       <br>
       <br>
-    </div>
-  	</form>
+      </div>
+  	  </form>
 
 
   </section>
